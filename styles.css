@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#music-player {
+    width: 100%;
+    height: 100vh;
+    background-color: #5d6067;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#outer {
+    width: 40%;
+    height: 70%;
+    background-color: #191b1d;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#inner {
+    width: 100%;
+    height: 60%;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px;
+}
+#inner>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+.songDetails {
+    padding: 5px 0 10px 20px;
+    row-gap: 5px;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    color: #67f73f;
+    /* height: 15%; */
+}
+#inner2 {
+    width: 100%;
+    /* height: 40%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.play{
+    color: #67f73f;
+}
+#playBtn {
+    width: fit-content;
+    height: fit-content;
+    font-size: 5vw;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#playBtn i:hover {
+    cursor: pointer;
+    color: #67f73f;
+    transition: transform 0.3s ease;
+}
+.playbackBtn {
+    font-size: 3vw;
+    margin: 0 1rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #outer {
+        width: 60%;
+        height: 60%;
+        padding: 2.6rem;
+    }
+    #inner {
+        height: 60%;
+    }
+    .songDetails {
+        font-size: 2vw;
+    }
+    #playBtn {
+        font-size: 9vw;
+    }
+    .playbackBtn {
+        font-size: 7vw;
+        margin: 0 0.5rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    #outer {
+        width: 75%;
+        height: 60%;
+        
+    }
+    #inner {
+        height: 60%;
+    }
+    .songDetails {
+        font-size: 3vw;
+    }
+    #playBtn {
+        font-size: 13vw;
+    }
+    .playbackBtn {
+        font-size: 9vw;
+        margin: 0 1rem;
+    }
+}
