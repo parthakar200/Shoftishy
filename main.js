@@ -26,7 +26,7 @@ play.addEventListener('click', () =>{
               pause.style.display = "block";
               pause.style.color = "blue";
               innerDiv.style.backgroundColor = "blue";
-              image[0].src = "thatha-dance.gif";
+              image[0].src = "dance.gif";
               console.log(`${posi}st song Playing`);
        }
 });
@@ -37,7 +37,7 @@ pause.addEventListener('click', () => {
               play.style.display = "block";
               pause.style.display = "none";
               innerDiv.style.backgroundColor = "aqua";
-              image[0].src = "file-20240417-20-f4i7bd.jpg";
+              image[0].src = "dance.jpeg";
               console.log(`${posi}st song Paused`); 
        }
 
@@ -48,7 +48,7 @@ next.addEventListener('click', ()=>{
                      songs[posi].pause();
                      songs[posi].currentTime = 0;
                      posi++ ;
-                     image[0].src = "file-20240417-20-f4i7bd.jpg";
+                     image[0].src = "dance.jpeg";
                      pause.style.display = "none";
                      play.style.display = "block";
                      innerDiv.style.backgroundColor = "aqua";
@@ -56,7 +56,7 @@ next.addEventListener('click', ()=>{
                      play.style.display = "none";
                      pause.style.display = "block";
                      innerDiv.style.backgroundColor = "blue";
-                     image[0].src = "thatha-dance.gif";
+                     image[0].src = "dance.gif";
                      songs[posi].play();
               }, 300);
               console.log(`${posi}st song Playing`);
@@ -79,7 +79,7 @@ previous.addEventListener('click', () => {
                      songs[posi].pause();
                      songs[posi].currentTime = 0;
                       posi--;
-                     image[0].src = "file-20240417-20-f4i7bd.jpg";
+                     image[0].src = "dance.jpeg";
                      pause.style.display = "none";
                      play.style.display = "block";
                      innerDiv.style.backgroundColor = "aqua";
@@ -87,7 +87,7 @@ previous.addEventListener('click', () => {
                      play.style.display = "none";
                      pause.style.display = "block";
                      innerDiv.style.backgroundColor = "blue";
-                     image[0].src = "thatha-dance.gif";
+                     image[0].src = "dance.gif";
                      songs[posi].play();
               }, 300);
               console.log(`${posi}st song Playing`);
